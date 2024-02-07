@@ -45,4 +45,4 @@
 
 <h1 align="left">Ekran Görüntüleri</h1>
 <h3 align="left"> Model </h3>
-![Model](https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/ModelDiagram.jpg "ModelDiagram")
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/ModelDiagram.jpg"  />
