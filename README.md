@@ -46,3 +46,22 @@
 <h1 align="left">Ekran Görüntüleri</h1>
 <h3 align="left"> Model </h3>
  <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/ModelDiagram.jpg"  />
+
+ <h3 align="left"> Dasboard </h3>
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/Dasboard.jpg"  />
+
+  <h3 align="left"> Admin Paneli Proje Ekranı </h3>
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/ProjectAdmin.jpg"  />
+ 
+  <h3 align="left"> Admin Paneli Proje Ekleme Ekranı </h3>
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/CreateProject.jpg"  />
+ 
+  <h3 align="left"> Admin Mesajlar Ekranı </h3>
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/Contact.jpg"  />
+ 
+  <h3 align="left"> Portfolyo Anasayfa </h3>
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/Feature.jpg"  />
+
+ <h3 align="left"> Portfolyo Projeler </h3>
+ <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/Projects.jpg"  />
+ 
