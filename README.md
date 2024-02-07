@@ -47,7 +47,7 @@
 <h3 align="left"> Model </h3>
  <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/ModelDiagram.jpg"  />
 
- <h3 align="left"> Dasboard </h3>
+ <h3 align="left"> Dashboard </h3>
  <img src="https://raw.githubusercontent.com/gulsaharslan/portfolio-project/main/ReadMeImage/Dasboard.jpg"  />
 
   <h3 align="left"> Admin Paneli Proje Ekranı </h3>
