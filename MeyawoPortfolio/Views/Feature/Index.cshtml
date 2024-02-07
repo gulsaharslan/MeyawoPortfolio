@@ -1,0 +1,32 @@
+﻿@model List<MeyawoPortfolio.Models.TblFeature>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Öne Çıkanlar</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Ad Soyad</th>
+        <th>Altbaşlık</th>
+        <th>İşlemler</th>
+       
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.FeatureID</td>
+            <td>@x.Header</td>
+            <td>@x.NameSurname</td>
+            <td>@x.Title</td>
+            <td><a href="#" class="btn btn-danger">Sil</a>
+            <a href="#" class="btn btn-success">Güncelle</a></td>
+            
+
+        </tr>
+    }
+
+</table>

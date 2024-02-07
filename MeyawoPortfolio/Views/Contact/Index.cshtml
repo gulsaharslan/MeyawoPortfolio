@@ -1,0 +1,54 @@
+﻿@model List<MeyawoPortfolio.Models.TblContact>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>İletişim</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen</th>
+        <th>Message</th>
+        <th>Tarih</th>
+        <th>İşlemler</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Message</td>
+            <td>@item.SendDate</td>
+            <td class="text-center">
+                <a href="/Contact/DeleteContact/@item.ContactID" class="btn btn-danger">Mesajı Sil</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal-@item.ContactID">
+                    Mail Adresini Gör
+                </button>
+            </td>
+        </tr>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal-@item.ContactID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gönderen Mail Adresi</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        @item.Email
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</table>

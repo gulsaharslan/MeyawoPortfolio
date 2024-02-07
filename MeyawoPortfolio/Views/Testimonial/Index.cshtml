@@ -1,0 +1,52 @@
+﻿@model List<MeyawoPortfolio.Models.TblTestimonial>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+
+}
+
+<h2>Referanslar</h2>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Referans Ad Soyad</th>
+        <th>Açıklama</th>
+        <th>Durumu</th>
+        <th>İşlemler</th>
+
+    </tr>
+
+
+    @foreach (var x in Model)
+    {
+
+        bool status = Convert.ToBoolean(x.Status);
+
+
+        <tr>
+            <td>@x.TestimonialID</td>
+            <td>@x.NameSurname</td>
+            <td>@x.Description</td>
+            <td>
+                @if (status)
+                {
+                    <a href="/Testimonial/ChangeStatus/@x.TestimonialID" class="btn btn-outline-success">Aktif</a>
+                }
+                else
+                {
+                    <a href="/Testimonial/ChangeStatus/@x.TestimonialID" class="btn btn-outline-danger">Pasif</a>
+                }
+            </td>
+            <td class="text-center">
+                <a href="/Testimonial/DeleteTestimonial/@x.TestimonialID" class="btn btn-danger">Sil</a>
+                <a href="/Testimonial/UpdateTestimonial/@x.TestimonialID" class="btn btn-success mt-2">Güncelle</a>
+            </td>
+
+
+        </tr>
+    }
+</table>
+
+<a href="/Testimonial/CreateTestimonial/" class="btn btn-primary">Yeni Referans Ekle</a>

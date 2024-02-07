@@ -1,0 +1,29 @@
+﻿@model List<MeyawoPortfolio.Models.TblProject>
+
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <p class="section-subtitle">Neler Yaptım?</p>
+        <h6 class="section-title mb-6">Projelerim</h6>
+        <!-- row -->
+        <div class="row justify-content-center">
+        @foreach(var item in Model) { 
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img src="@item.ImageUrl" class="portfolio-card-img" style="height:200px"
+                         alt="Projects">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h5 class="title">
+                                @item.Title
+                            </h5>
+                            <p class="font-weight-normal">Kategori:@item.TblCategory.CategoryName</p>
+                          
+                        </span>
+                    </span>
+                </a>
+            </div>
+        }
+          
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+</section>

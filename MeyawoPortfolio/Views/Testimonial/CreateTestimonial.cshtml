@@ -1,0 +1,22 @@
+﻿@model MeyawoPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Referans Ekle</h2>
+
+<form method="post">
+    
+    <br />
+    <label>Referans Ad Soyad</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "table table-bordered" })
+    <br />
+    <label>Referans Görseli</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })    <br />
+    <label>Referans Açıklaması</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "table table-bordered" })
+    <br />
+    <button class="btn btn-info">Referans Kaydet</button>
+
+</form>

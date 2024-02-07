@@ -1,0 +1,26 @@
+﻿@model MeyawoPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Referans Güncelle</h2>
+
+<form method="post">
+    <label>#</label>
+    @Html.TextBoxFor(x => x.TestimonialID, new { @class = "table table-bordered" })
+    <br />
+    <label>Referans Ad Soyad</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "table table-bordered" })
+    <br />
+    <label>Hizmet Görseli</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })
+    <br />
+    <label>Hizmet Açıklaması</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "table table-bordered" })    <br />
+    <br />
+
+
+    <button class="btn btn-info">Referans Güncelle</button>
+
+</form>

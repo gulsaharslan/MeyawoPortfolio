@@ -1,0 +1,23 @@
+﻿@model MeyawoPortfolio.Models.TblService
+@{
+    ViewBag.Title = "CreateService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Hizmet Girişi</h2>
+
+<form method="post">
+    <label>#</label>
+    @Html.TextBoxFor(x => x.ServiceID, new { @class = "table table-bordered" })
+    <br />
+    <label>Hizmet Başlığı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "table table-bordered" })
+    <br />
+    <label>Hizmet Görseli</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })    <br />
+    <label>Hizmet Açıklaması</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "table table-bordered" })
+    <br />
+    <button class="btn btn-info">Hizmet Kaydet</button>
+
+</form>

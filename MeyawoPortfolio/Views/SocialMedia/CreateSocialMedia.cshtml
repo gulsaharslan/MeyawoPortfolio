@@ -1,0 +1,21 @@
+﻿@model MeyawoPortfolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "CreateSocialMedia";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+
+<h2>Yeni Sosyal Medya Girişi</h2>
+
+<form method="post">
+   
+    <label>Hizmet Başlığı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "table table-bordered" })
+    <br />
+    <label>Hizmet Görseli</label>
+    @Html.TextBoxFor(x => x.Icon, new { @class = "table table-bordered" })    <br />
+ 
+    <br />
+    <button class="btn btn-info">Sosyal Medya Kaydet</button>
+
+</form>
