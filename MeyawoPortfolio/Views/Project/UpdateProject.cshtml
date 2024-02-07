@@ -15,13 +15,15 @@
     @Html.TextBoxFor(x => x.Title, new { @class = "table table-bordered" })    <br />
     <label>Proje Kategorisi</label>
     @Html.DropDownListFor(x => x.ProjectCategory, (List<SelectListItem>)ViewBag.v, new { @class = "table table-bordered" }) <br />
-        <label>Github Linki</label>
-        @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "table table-bordered" })    <br />
-        <br />
+    <label>Proje Görseli</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })    <br />
+    <label>Github Linki</label>
+    @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "table table-bordered" })    <br />
+    <br />
     <label>Proje Açıklaması</label>
     <textarea rows="5" class="table table-bordered" name="Description">@Model.Description</textarea>
 
 
-        <button class="btn btn-info">Hizmeti Güncelle</button>
+    <button class="btn btn-info">Proje Güncelle</button>
 
 </form>
